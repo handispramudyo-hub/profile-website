@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handis | Developer</title>
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- PARTICLE BACKGROUND -->
+    <div id="particles-js"></div>
+
+    <!-- NAVBAR -->
+    <nav>
+      <h2>Handis</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text" data-aos="fade-right">
+        <h1>Hi, I'm <span>Handis</span></h1>
+        <h2 id="typing"></h2>
+        <button onclick="scrollToSection('contact')">Hire Me</button>
+      </div>
+
+      <img src="https://i.pravatar.cc/250" alt="profile" data-aos="zoom-in" />
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>
+        Saya developer yang suka bikin website modern, interaktif, dan clean UI.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 data-aos="fade-up">Skills</h2>
+      <div class="skills">
+        <div class="skill" data-aos="zoom-in">HTML</div>
+        <div class="skill" data-aos="zoom-in">CSS</div>
+        <div class="skill" data-aos="zoom-in">JavaScript</div>
+        <div class="skill" data-aos="zoom-in">PHP</div>
+        <div class="skill" data-aos="zoom-in">MySQL</div>
+      </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="portfolio">
+      <h2 data-aos="fade-up">Projects</h2>
+      <div class="cards">
+        <div class="card" data-aos="flip-left">
+          <h3>E-Commerce</h3>
+          <p>Website toko online modern</p>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <h3>CRUD MVC</h3>
+          <p>Aplikasi manajemen data</p>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <h3>Portfolio</h3>
+          <p>Website personal keren</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/diidioo._" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://wa.me/62895706340406" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="https://linkedin.com" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Handis</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
