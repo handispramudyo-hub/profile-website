@@ -39,10 +39,10 @@ typing();
 // PARTICLES
 particlesJS("particles-js", {
   particles: {
-    number: { value: 60 },
+    number: { value: 70 },
     color: { value: "#38bdf8" },
     shape: { type: "circle" },
-    opacity: { value: 0.5 },
+    opacity: { value: 0.6 },
     size: { value: 3 },
     move: { enable: true, speed: 2 },
   },

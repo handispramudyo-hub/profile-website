@@ -23,6 +23,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 50px;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
@@ -42,12 +43,27 @@ nav a {
   text-decoration: none;
 }
 
+/* BUTTON CV */
+.btn-cv {
+  background: #38bdf8;
+  padding: 8px 15px;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-cv:hover {
+  transform: scale(1.1);
+}
+
 /* HERO */
 .hero {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100vh;
+  flex-wrap: wrap;
 }
 
 .hero span {
@@ -56,16 +72,41 @@ nav a {
 }
 
 .hero img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 0 40px #38bdf8;
+  transition: 0.3s;
+}
+
+.hero img:hover {
+  transform: scale(1.1) rotate(2deg);
 }
 
 .hero button {
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 10px 20px;
   background: #38bdf8;
   border: none;
   cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: scale(1.1);
+}
+
+/* CTA */
+.cta button {
+  margin: 10px;
+}
+
+.cta .secondary {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
 }
 
 /* SECTION */
@@ -83,15 +124,26 @@ section {
 
 .skill {
   margin: 10px;
-  padding: 15px 25px;
-  border-radius: 20px;
+  padding: 20px;
+  border-radius: 15px;
   background: rgba(255, 255, 255, 0.05);
   transition: 0.3s;
+  max-width: 250px;
 }
 
 .skill:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: 0 0 20px #38bdf8;
+}
+
+/* TECH ICON */
+.tech {
+  margin-top: 20px;
+}
+
+.tech i {
+  font-size: 30px;
+  margin: 10px;
 }
 
 /* PROJECT */
@@ -107,6 +159,7 @@ section {
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.05);
   transition: 0.3s;
+  width: 250px;
 }
 
 .card:hover {
@@ -114,32 +167,50 @@ section {
   box-shadow: 0 0 25px #38bdf8;
 }
 
-/* SOCIAL */
+/* 🔥 SOCIAL (FIX UTAMA ADA DI SINI) */
 .social-icons a {
   margin: 15px;
   font-size: 30px;
   color: white;
   transition: 0.3s;
+  text-decoration: none; /* 🔥 INI FIX GARIS _ */
+  display: inline-block;
 }
 
 .social-icons a:hover {
-  transform: scale(1.3);
+  transform: scale(1.3) translateY(-5px);
 }
 
 .social-icons a:nth-child(1):hover {
   color: #e1306c;
 }
+
 .social-icons a:nth-child(2):hover {
   color: #25d366;
 }
+
 .social-icons a:nth-child(3):hover {
   color: #0077b5;
 }
-.social-icons a:nth-child(4):hover {
-  color: #333;
-}
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
 }
