@@ -51,14 +51,14 @@ typing();
 particlesJS("particles-js", {
   particles: {
     number: { value: 60, density: { enable: true, value_area: 900 } },
-    color: { value: "#38bdf8" },
+    color: { value: "#6366f1" },
     shape: { type: "circle" },
     opacity: { value: 0.4, random: true },
     size: { value: 2.5, random: true },
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#38bdf8",
+      color: "#6366f1",
       opacity: 0.15,
       width: 1,
     },
