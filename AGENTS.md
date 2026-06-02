@@ -5,7 +5,6 @@ Vanilla HTML5 / CSS3 / JavaScript (ES6) — **no build step, no package manager,
 
 ## Dependencies (all CDN, loaded in `index.html`)
 - AOS 2.3.4 (scroll animations)
-- Particles.js (background particle canvas)
 - Font Awesome 6.5.0 (icons)
 - Google Fonts: Inter
 
@@ -17,8 +16,8 @@ Vanilla HTML5 / CSS3 / JavaScript (ES6) — **no build step, no package manager,
 ## Project structure
 ```
 index.html     — main page (Indonesian language throughout)
-style.css      — all styles (light theme, CSS custom properties)
-script.js      — AOS init, typing effect, particles, scroll nav, hamburger, stats counter, toast
+style.css      — all styles (light theme, Apple-inspired, CSS custom properties)
+script.js      — AOS init, typing effect, scroll nav, hamburger, stats counter, toast
 profiledio.jpeg — hero profile photo
 ```
 
@@ -26,8 +25,7 @@ profiledio.jpeg — hero profile photo
 - UI text is in **Bahasa Indonesia** (keep consistent).
 - Contact form in `script.js:185` simply shows a toast — no backend submission.
 - Scroll-triggered animations use `data-aos` attributes; skill bars and stat counters use `IntersectionObserver` in JS.
-- CSS uses `:root` custom properties for theming (`--primary: #6366f1`, `--secondary: #06b6d4`, `--bg-dark: #ffffff`, `--text: #0f172a`, etc.).
-- Particles color matches `--primary` (`#6366f1`) in `script.js:54` / `script.js:61`.
+- CSS uses `:root` custom properties for theming (`--primary: #6366f1`, `--bg: #ffffff`, `--text: #1d1d1f`, etc.).
 - Mobile nav uses a hamburger menu (slide-in from right).
 
 ## Design Style
@@ -35,10 +33,9 @@ profiledio.jpeg — hero profile photo
 - **Light theme** — white background, dark slate text
 - **Color palette:**
   - Primary `#6366f1` (indigo) — accents, buttons, links
-  - Accent `#06b6d4` (cyan) — gradient partner, secondary highlights
-  - Background `#ffffff`, text `#0f172a`, muted `#64748b`
-- **Typography:** Inter (heading ExtraBold 800, body Regular 400)
-- **Animations:** AOS scroll reveals (fade-up, fade-right/left, zoom-in), CSS transitions on hover
+  - Background `#ffffff`, text `#1d1d1f`, muted `#6e6e73`
+- **Typography:** Inter (heading SemiBold 600, body Regular 400)
+- **Animations:** AOS scroll reveals (fade-up, fade-right/left), CSS transitions on hover, no particles
 
 ## Git
 - Remote: `https://github.com/handispramudyo-hub/profile-website.git`

@@ -1,8 +1,9 @@
 // ===== AOS =====
 AOS.init({
-  duration: 800,
+  duration: 600,
   once: true,
-  offset: 80,
+  offset: 40,
+  easing: "ease-out",
 });
 
 // ===== SCROLL TO SECTION =====
@@ -46,35 +47,6 @@ function typing() {
 }
 
 typing();
-
-// ===== PARTICLES =====
-particlesJS("particles-js", {
-  particles: {
-    number: { value: 60, density: { enable: true, value_area: 900 } },
-    color: { value: "#6366f1" },
-    shape: { type: "circle" },
-    opacity: { value: 0.4, random: true },
-    size: { value: 2.5, random: true },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: "#6366f1",
-      opacity: 0.15,
-      width: 1,
-    },
-    move: { enable: true, speed: 1.5, direction: "none", random: true },
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: { enable: true, mode: "grab" },
-      resize: true,
-    },
-    modes: {
-      grab: { distance: 140, line_linked: { opacity: 0.5 } },
-    },
-  },
-});
 
 // ===== NAVBAR SCROLL =====
 const navbar = document.getElementById("navbar");
