@@ -25,7 +25,7 @@ profiledio.jpeg — hero profile photo
 ## Conventions
 - UI text is in **English** (keep consistent).
 - Contact form in `script.js:185` simply shows a toast — no backend submission.
-- "Download CV" button links to `cv.html` with `download` attribute — a standalone printable resume page.
+- "Download CV" button opens `cv.html` in a new tab — page auto-triggers Print dialog (user can "Save as PDF").
 - Scroll-triggered animations use `data-aos` attributes; skill bars and stat counters use `IntersectionObserver` in JS.
 - CSS uses `:root` custom properties for theming (`--primary: #6366f1`, `--bg: #ffffff`, `--text: #1d1d1f`, etc.).
 - Mobile nav uses a hamburger menu (slide-in from right).
