@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Handis Pramudio Ananta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Inter", sans-serif;
+      color: #1d1d1f;
+      background: #fff;
+      padding: 48px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+      -webkit-font-smoothing: antialiased;
+    }
+    @media print {
+      body { padding: 32px 28px; }
+      .no-print { display: none; }
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 2px solid #6366f1;
+    }
+    .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.02em; }
+    .header .title { font-size: 1rem; color: #6366f1; font-weight: 500; margin-bottom: 10px; }
+    .header .contact { font-size: 0.85rem; color: #6e6e73; }
+    .header .contact a { color: #6366f1; text-decoration: none; }
+    .header .contact a:hover { text-decoration: underline; }
+    .section { margin-bottom: 24px; }
+    .section-title {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6366f1;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #d2d2d7;
+    }
+    .section p, .section li { font-size: 0.9rem; line-height: 1.6; color: #1d1d1f; }
+    .section ul { list-style: none; padding-left: 0; }
+    .section ul li { position: relative; padding-left: 16px; margin-bottom: 4px; }
+    .section ul li::before { content: "–"; position: absolute; left: 0; color: #6366f1; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .item { margin-bottom: 16px; }
+    .item h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 2px; }
+    .item .meta { font-size: 0.8rem; color: #6366f1; font-weight: 500; margin-bottom: 4px; }
+    .item .sub { font-size: 0.82rem; color: #6e6e73; margin-bottom: 4px; }
+    .item p { font-size: 0.85rem; line-height: 1.6; color: #1d1d1f; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+    .tags span {
+      font-size: 0.72rem; padding: 3px 10px;
+      background: rgba(99, 102, 241, 0.08);
+      color: #6366f1; border-radius: 50px; font-weight: 500;
+    }
+    .skill-group { margin-bottom: 12px; }
+    .skill-group h4 { font-size: 0.85rem; font-weight: 600; margin-bottom: 4px; color: #1d1d1f; }
+    .skill-group .items { font-size: 0.85rem; color: #6e6e73; line-height: 1.7; }
+    .cert-item { margin-bottom: 10px; }
+    .cert-item h4 { font-size: 0.88rem; font-weight: 600; }
+    .cert-item .meta { font-size: 0.8rem; color: #6366f1; font-weight: 500; }
+    .cert-item p { font-size: 0.82rem; color: #6e6e73; margin-top: 2px; }
+    .btn-print {
+      display: inline-block; margin-bottom: 24px; padding: 10px 24px;
+      background: #6366f1; color: #fff; border: none; border-radius: 10px;
+      font-family: "Inter", sans-serif; font-size: 0.9rem; font-weight: 500;
+      cursor: pointer; transition: background 0.2s;
+    }
+    .btn-print:hover { background: #5558e6; }
+    @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } body { padding: 24px 16px; } }
+  </style>
+</head>
+<body>
+
+<button class="btn-print no-print" onclick="window.print()">Print / Save as PDF</button>
+
+<div class="header">
+  <h1>Handis Pramudio Ananta</h1>
+  <div class="title">Informatics Engineering Student</div>
+  <div class="contact">
+    handispramudyo@gmail.com &nbsp;|&nbsp; 0895706340406 &nbsp;|&nbsp;
+    <a href="https://www.linkedin.com/in/pramudio-ananta" target="_blank">linkedin.com/in/pramudio-ananta</a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Executive Summary</div>
+  <p>
+    Informatics Engineering student at Universitas Dian Nuswantoro (UDINUS) with a strong interest in
+    Software Engineering, Web Development, and Information Systems. Experienced in developing web-based
+    applications, including inventory management systems, portfolio websites, and business management
+    solutions using Laravel, PHP, JavaScript, and MySQL. Familiar with Software Development Life Cycle
+    (SDLC), database design, REST API integration, and responsive web development. Passionate about
+    building scalable and user-friendly applications while continuously improving technical skills
+    through hands-on projects and professional certifications.
+  </p>
+</div>
+
+<div class="section">
+  <div class="section-title">Education</div>
+  <div class="item">
+    <h3>Bachelor of Informatics Engineering</h3>
+    <div class="meta">Universitas Dian Nuswantoro (UDINUS)</div>
+    <div class="sub">GPA: 3.28 / 4.00</div>
+    <p><strong>Relevant Coursework:</strong> Software Engineering, Object-Oriented Programming,
+    Web Programming, Mobile Application Development, Database Systems, Data Structures and Algorithms,
+    Human-Computer Interaction, Software Testing and Quality Assurance, System Analysis and Design,
+    Computer Networks, Operating Systems, Project Management, UI/UX Design, Version Control and
+    Collaborative Development.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Project Experiences</div>
+
+  <div class="item">
+    <h3>CoffeeFlow – Coffee Shop Management Website</h3>
+    <div class="meta">Academic Project &mdash; 2025</div>
+    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git</span><span>GitHub</span></div>
+    <p>Designed and developed a responsive coffee shop management website with product catalog, menu management,
+    and user-friendly navigation. Created an attractive and responsive UI for desktop and mobile devices.
+    Managed project version control using Git and GitHub.</p>
+  </div>
+
+  <div class="item">
+    <h3>Inventory Management System (CRUD Application)</h3>
+    <div class="meta">Academic Project &mdash; 2025</div>
+    <div class="tags"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>Git</span></div>
+    <p>Developed a web-based inventory management system implementing full CRUD operations. Designed and managed
+    relational databases for product and inventory data. Implemented form validation and data management features.
+    Integrated frontend and backend components for a seamless user experience.</p>
+  </div>
+
+  <div class="item">
+    <h3>Portfolio Website</h3>
+    <div class="meta">Personal Project &mdash; 2025</div>
+    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span></div>
+    <p>Built a personal portfolio website to showcase projects, technical skills, and professional background.
+    Developed responsive layouts and optimized website performance. Implemented modern UI/UX principles
+    for better user engagement.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Organizational Experience</div>
+
+  <div class="item">
+    <h3>Chairman of Student Council (OSIS)</h3>
+    <div class="meta">Senior High School &mdash; 2022 &ndash; 2023</div>
+    <p>Led and coordinated student council members in planning and executing school programs and events.
+    Managed communication and collaboration between students, teachers, and school management.
+    Developed leadership, decision-making, teamwork, and problem-solving skills through organizational management.</p>
+  </div>
+
+  <div class="item">
+    <h3>Facilities and Infrastructure Division Staff (OSIS)</h3>
+    <div class="meta">Junior High School &mdash; 2019 &ndash; 2020</div>
+    <p>Assisted in managing school facilities and infrastructure required for student activities and events.
+    Coordinated equipment preparation and maintenance. Collaborated with other divisions for smooth execution
+    of school activities.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Certifications</div>
+  <div class="grid-2">
+    <div class="cert-item">
+      <h4>Machine Learning Professional Certificate</h4>
+      <div class="meta">IBM &mdash; 2025</div>
+      <p>EDA, Supervised &amp; Unsupervised Learning, Deep Learning, Reinforcement Learning</p>
+    </div>
+    <div class="cert-item">
+      <h4>Introduction to DevOps</h4>
+      <div class="meta">IBM &mdash; April 2026</div>
+      <p>CI/CD, automation, collaborative development workflows</p>
+    </div>
+    <div class="cert-item">
+      <h4>Introduction to Software Engineering</h4>
+      <div class="meta">IBM &mdash; April 2026</div>
+      <p>SDLC, software design principles, Agile methodologies</p>
+    </div>
+    <div class="cert-item">
+      <h4>Introduction to Cloud Computing</h4>
+      <div class="meta">IBM &mdash; April 2026</div>
+      <p>Cloud concepts, service models, virtualization, deployment</p>
+    </div>
+    <div class="cert-item">
+      <h4>Generative AI: Introduction &amp; Applications</h4>
+      <div class="meta">IBM &mdash; October 2025</div>
+      <p>Generative AI fundamentals and industry applications</p>
+    </div>
+    <div class="cert-item">
+      <h4>Generative AI: Prompt Engineering</h4>
+      <div class="meta">IBM &mdash; October 2025</div>
+      <p>Prompt engineering techniques for optimal AI outputs</p>
+    </div>
+    <div class="cert-item">
+      <h4>Supervised ML: Classification</h4>
+      <div class="meta">IBM &mdash; November 2025</div>
+      <p>Classification algorithms and model evaluation</p>
+    </div>
+    <div class="cert-item">
+      <h4>Supervised ML: Regression</h4>
+      <div class="meta">IBM &mdash; October 2025</div>
+      <p>Regression techniques for predictive modeling</p>
+    </div>
+    <div class="cert-item">
+      <h4>EDA for Machine Learning</h4>
+      <div class="meta">IBM &mdash; October 2025</div>
+      <p>Data exploration, visualization, and preprocessing</p>
+    </div>
+    <div class="cert-item">
+      <h4>Introduction to Artificial Intelligence</h4>
+      <div class="meta">IBM &mdash; November 2025</div>
+      <p>AI concepts, ML techniques, real-world applications</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Skills</div>
+  <div class="grid-2">
+    <div class="skill-group">
+      <h4>Programming Languages</h4>
+      <div class="items">JavaScript, PHP, Java, HTML5, Python, SQL</div>
+    </div>
+    <div class="skill-group">
+      <h4>Frameworks &amp; Libraries</h4>
+      <div class="items">Laravel, Bootstrap, Tailwind CSS, React.js</div>
+    </div>
+    <div class="skill-group">
+      <h4>Software &amp; Tools</h4>
+      <div class="items">VS Code, Git &amp; GitHub, MySQL, phpMyAdmin, XAMPP, Laragon, Postman, Figma</div>
+    </div>
+    <div class="skill-group">
+      <h4>Languages</h4>
+      <div class="items">Bahasa Indonesia (Native), English (Intermediate &ndash; Technical)</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

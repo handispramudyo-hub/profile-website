@@ -15,15 +15,17 @@ Vanilla HTML5 / CSS3 / JavaScript (ES6) — **no build step, no package manager,
 
 ## Project structure
 ```
-index.html     — main page (Indonesian language throughout)
+index.html     — main page (English; contact form toast-only, no backend)
+cv.html        — printable resume page (standalone, downloadable via "Download CV" button)
 style.css      — all styles (light theme, Apple-inspired, CSS custom properties)
 script.js      — AOS init, typing effect, scroll nav, hamburger, stats counter, toast
 profiledio.jpeg — hero profile photo
 ```
 
 ## Conventions
-- UI text is in **Bahasa Indonesia** (keep consistent).
+- UI text is in **English** (keep consistent).
 - Contact form in `script.js:185` simply shows a toast — no backend submission.
+- "Download CV" button links to `cv.html` with `download` attribute — a standalone printable resume page.
 - Scroll-triggered animations use `data-aos` attributes; skill bars and stat counters use `IntersectionObserver` in JS.
 - CSS uses `:root` custom properties for theming (`--primary: #6366f1`, `--bg: #ffffff`, `--text: #1d1d1f`, etc.).
 - Mobile nav uses a hamburger menu (slide-in from right).

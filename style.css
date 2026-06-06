@@ -958,7 +958,23 @@ footer {
     align-items: center;
   }
 
-  .hero .sub {
+.contact-line {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  letter-spacing: 0.01em;
+}
+
+.contact-line a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contact-line a:hover {
+  text-decoration: underline;
+}
+
+.hero .sub {
     max-width: 100%;
   }
 

@@ -19,6 +19,7 @@ const text = [
   "Software Engineer",
   "Problem Solver",
   "UI/UX Enthusiast",
+  "Tech Enthusiast",
 ];
 let i = 0;
 let j = 0;

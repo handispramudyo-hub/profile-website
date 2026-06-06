@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,11 +38,7 @@
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
-      <a
-        href="#"
-        class="btn-cv"
-        onclick="alert('CV akan tersedia untuk download!')"
-      >
+      <a href="cv.html" class="btn-cv" download>
         <i class="fas fa-download"></i> Download CV
       </a>
 
@@ -57,22 +53,28 @@
     <!-- HERO -->
     <section id="home" class="hero">
       <div class="hero-text" data-aos="fade-right">
-        <p class="greeting">Halo! Saya 👋</p>
+        <p class="greeting">Hi, I'm</p>
         <h1>Handis Pramudio <span>Ananta</span></h1>
         <h3><span id="typing"></span><span class="cursor">|</span></h3>
 
+        <p class="contact-line">
+          handispramudyo@gmail.com &nbsp;|&nbsp; 0895706340406 &nbsp;|&nbsp;
+          <a href="https://www.linkedin.com/in/pramudio-ananta" target="_blank"
+            >linkedin.com/in/pramudio-ananta</a
+          >
+        </p>
+
         <p class="sub">
-          Mengubah ide menjadi produk digital yang berdampak. Fokus pada solusi
-          — bukan sekadar kode. Siap berkontribusi di tim yang menghargai
-          inovasi dan eksekusi.
+          Informatics Engineering student passionate about building scalable
+          web applications and solving real-world problems through code.
         </p>
 
         <div class="cta">
           <button onclick="scrollToSection('projects')">
-            <i class="fas fa-rocket"></i> Lihat Karya Saya
+            <i class="fas fa-rocket"></i> View My Work
           </button>
           <button onclick="scrollToSection('contact')" class="secondary">
-            <i class="fas fa-paper-plane"></i> Ajak Ngobrol
+            <i class="fas fa-paper-plane"></i> Let's Talk
           </button>
         </div>
       </div>
@@ -86,67 +88,69 @@
     <section class="stats" data-aos="fade-up">
       <div class="stat">
         <h3 data-count="10">0</h3>
-        <p>Proyek Selesai</p>
+        <p>Projects Completed</p>
       </div>
       <div class="stat">
         <h3 data-count="5">0</h3>
-        <p>Teknologi Dikuasai</p>
+        <p>Technologies Mastered</p>
       </div>
       <div class="stat">
         <h3 data-count="3">0</h3>
-        <p>Sertifikasi</p>
+        <p>Certifications</p>
       </div>
       <div class="stat">
         <h3 data-count="100">0</h3>
-        <p>% Komitmen</p>
+        <p>Commitment</p>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" data-aos="fade-up">
-      <h2 class="section-title">Tentang Saya</h2>
+      <h2 class="section-title">About Me</h2>
       <div class="about-grid">
         <div class="about-text" data-aos="fade-right">
           <p class="lead">
-            Saya bukan sekadar coder — saya adalah
-            <strong>pemecah masalah</strong> yang menggunakan teknologi sebagai
-            alat.
+            Informatics Engineering student at
+            <strong>Universitas Dian Nuswantoro (UDINUS)</strong> with a strong
+            interest in Software Engineering, Web Development, and Information
+            Systems.
           </p>
           <p>
-            Mahasiswa Teknik Informatika di Universitas Dian Nuswantoro yang
-            secara aktif membangun proyek nyata di luar kuliah. Setiap baris
-            kode yang saya tulis punya tujuan: menyelesaikan masalah, bukan
-            sekadar menyelesaikan tugas.
+            Experienced in developing web-based applications, including
+            inventory management systems, portfolio websites, and business
+            management solutions using Laravel, PHP, JavaScript, and MySQL.
           </p>
           <p>
-            Saat ini fokus mendalami
-            <strong>full-stack web development</strong> dan
-            <strong>software architecture</strong>. Saya percaya kemampuan
-            teknis harus dibarengi komunikasi yang baik dan mindset growth.
+            Familiar with
+            <strong>Software Development Life Cycle (SDLC)</strong>, database
+            design, REST API integration, and responsive web development.
+            Passionate about building scalable and user-friendly applications
+            while continuously improving technical skills through hands-on
+            projects and professional certifications.
           </p>
           <div class="about-tags">
-            <span>🎯 Problem Solver</span>
-            <span>🚀 Fast Learner</span>
-            <span>🤝 Team Player</span>
-            <span>💡 Creative Thinker</span>
+            <span>Problem Solver</span>
+            <span>Fast Learner</span>
+            <span>Team Player</span>
+            <span>Creative Thinker</span>
           </div>
         </div>
         <div class="about-info" data-aos="fade-left">
           <div class="info-item">
-            <span>Nama</span>
+            <span>Name</span>
             <strong>Handis Pramudio Ananta</strong>
           </div>
           <div class="info-item">
-            <span>Pendidikan</span>
+            <span>Education</span>
             <strong>Universitas Dian Nuswantoro</strong>
           </div>
           <div class="info-item">
-            <span>Jurusan</span>
-            <strong>S1 Teknik Informatika</strong>
+            <span>Major</span>
+            <strong>S1 Informatics Engineering</strong>
           </div>
           <div class="info-item">
             <span>Status</span>
-            <strong class="status-active">Aktif — Open to Work</strong>
+            <strong class="status-active">Open to Work</strong>
           </div>
         </div>
       </div>
@@ -154,13 +158,13 @@
 
     <!-- SKILLS -->
     <section id="skills">
-      <h2 class="section-title" data-aos="fade-up">Keahlian & Teknologi</h2>
+      <h2 class="section-title" data-aos="fade-up">Skills & Technologies</h2>
 
       <div class="skills" data-aos="fade-up">
         <div class="skill">
           <div class="skill-icon"><i class="fas fa-code"></i></div>
           <h3>Web Development</h3>
-          <p>Membangun platform web responsif, cepat, dan siap produksi.</p>
+          <p>Building responsive, performant, and production-ready web platforms.</p>
           <div class="skill-bar">
             <div class="bar-fill" data-width="85"></div>
           </div>
@@ -169,7 +173,7 @@
         <div class="skill">
           <div class="skill-icon"><i class="fas fa-cogs"></i></div>
           <h3>Software Engineering</h3>
-          <p>Merancang arsitektur software yang scalable dan maintainable.</p>
+          <p>Designing scalable and maintainable software architecture.</p>
           <div class="skill-bar">
             <div class="bar-fill" data-width="75"></div>
           </div>
@@ -178,7 +182,7 @@
         <div class="skill">
           <div class="skill-icon"><i class="fas fa-palette"></i></div>
           <h3>UI/UX Design</h3>
-          <p>Mendesain antarmuka yang intuitif dengan fokus pada pengguna.</p>
+          <p>Designing intuitive interfaces with a focus on user experience.</p>
           <div class="skill-bar">
             <div class="bar-fill" data-width="70"></div>
           </div>
@@ -188,7 +192,7 @@
           <div class="skill-icon"><i class="fas fa-brain"></i></div>
           <h3>Problem Solving</h3>
           <p>
-            Mengurai masalah kompleks menjadi langkah solutif yang terstruktur.
+            Breaking down complex problems into structured, actionable solutions.
           </p>
           <div class="skill-bar">
             <div class="bar-fill" data-width="90"></div>
@@ -224,10 +228,9 @@
 
     <!-- PROJECT -->
     <section id="projects">
-      <h2 class="section-title" data-aos="fade-up">Proyek Terpilih</h2>
+      <h2 class="section-title" data-aos="fade-up">Selected Projects</h2>
       <p class="section-sub" data-aos="fade-up">
-        Setiap proyek adalah bukti bahwa saya bisa mengubah konsep menjadi
-        produk nyata.
+        Each project is proof that I can turn concepts into real, working products.
       </p>
 
       <div class="cards">
@@ -239,12 +242,13 @@
               <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
-          <h3>Sistem Database Mahasiswa</h3>
+          <h3>Inventory Management System</h3>
           <p>
-            Platform manajemen data akademik dengan fitur CRUD lengkap,
-            pencarian real-time, dan validasi input yang ketat.
+            A web-based CRUD inventory system with relational database design,
+            form validation, and seamless frontend-backend integration using Laravel.
           </p>
           <div class="card-tags">
+            <span>Laravel</span>
             <span>PHP</span>
             <span>MySQL</span>
             <span>Bootstrap</span>
@@ -261,8 +265,8 @@
           </div>
           <h3>Portfolio Website</h3>
           <p>
-            Website personal interaktif dengan animasi partikel, efek scroll,
-            dan desain dark-mode yang modern.
+            A personal portfolio website to showcase projects, technical skills,
+            and professional background with responsive layouts and modern UI/UX.
           </p>
           <div class="card-tags">
             <span>HTML</span>
@@ -283,16 +287,16 @@
               ></a>
             </div>
           </div>
-          <h3>Coffeeflow</h3>
+          <h3>Coffeeflow — Coffee Shop Website</h3>
           <p>
-            Platform pemesanan kopi online dengan antarmuka modern dan
-            responsif. Memudahkan pelanggan memesan menu favorit langsung
-            dari browser.
+            A responsive coffee shop management website with product catalog,
+            menu management, and user-friendly navigation across all devices.
           </p>
           <div class="card-tags">
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
+            <span>Git</span>
           </div>
         </div>
       </div>
@@ -300,18 +304,18 @@
 
     <!-- EXPERIENCE / EDUCATION -->
     <section id="experience">
-      <h2 class="section-title" data-aos="fade-up">Perjalanan & Pendidikan</h2>
+      <h2 class="section-title" data-aos="fade-up">Experience & Education</h2>
 
       <div class="timeline">
         <div class="timeline-item" data-aos="fade-right">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-date">2023 — Sekarang</span>
-            <h3>S1 Teknik Informatika</h3>
-            <p>Universitas Dian Nuswantoro</p>
+            <span class="timeline-date">2023 — Present</span>
+            <h3>S1 Informatics Engineering</h3>
+            <p>Universitas Dian Nuswantoro (UDINUS) — GPA: 3.28/4.00</p>
             <p class="timeline-detail">
-              Fokus: Algorithm, Database Systems, Software Architecture, Web
-              Development
+              Relevant Coursework: Software Engineering, OOP, Web Programming,
+              Database Systems, Data Structures, HCI, UI/UX Design, Project Management
             </p>
           </div>
         </div>
@@ -319,12 +323,13 @@
         <div class="timeline-item" data-aos="fade-left">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-date">2024</span>
-            <h3>Freelance Web Developer</h3>
-            <p>Proyek Independen</p>
+            <span class="timeline-date">2022 — 2023</span>
+            <h3>Chairman of Student Council (OSIS)</h3>
+            <p>Senior High School</p>
             <p class="timeline-detail">
-              Membangun website untuk klien UMKM, mengoptimalkan performa dan
-              pengalaman pengguna.
+              Led and coordinated student council members, managed communication
+              between students and school management, and ensured successful
+              program implementation.
             </p>
           </div>
         </div>
@@ -332,12 +337,12 @@
         <div class="timeline-item" data-aos="fade-right">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-date">Sedang Berjalan</span>
-            <h3>Self-taught Full-Stack Development</h3>
-            <p>Online Courses & Personal Projects</p>
+            <span class="timeline-date">2024 — Present</span>
+            <h3>Freelance Web Developer</h3>
+            <p>Independent Projects</p>
             <p class="timeline-detail">
-              Aktif belajar Laravel, React, dan best practices software
-              engineering melalui project-based learning.
+              Building websites for clients, optimizing performance and user
+              experience using Laravel, PHP, JavaScript, and modern frameworks.
             </p>
           </div>
         </div>
@@ -346,29 +351,29 @@
 
     <!-- CONTACT -->
     <section id="contact" data-aos="fade-up">
-      <h2 class="section-title">Mari Berkolaborasi</h2>
+      <h2 class="section-title">Let's Collaborate</h2>
       <p class="section-sub">
-        Punya proyek menarik atau ingin berdiskusi? Jangan ragu untuk
-        menghubungi saya — saya merespons cepat.
+        Have an interesting project or want to discuss? Feel free to reach out —
+        I respond quickly.
       </p>
 
       <form class="contact-form" onsubmit="handleSubmit(event)">
         <div class="form-row">
-          <input type="text" placeholder="Nama Lengkap" required />
-          <input type="email" placeholder="Email Aktif" required />
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Active Email" required />
         </div>
-        <input type="text" placeholder="Subjek" required />
+        <input type="text" placeholder="Subject" required />
         <textarea
-          placeholder="Tulis pesan Anda di sini..."
+          placeholder="Write your message here..."
           rows="5"
           required
         ></textarea>
         <button type="submit">
-          <i class="fas fa-paper-plane"></i> Kirim Pesan
+          <i class="fas fa-paper-plane"></i> Send Message
         </button>
       </form>
 
-      <p class="or-text">atau temukan saya di</p>
+      <p class="or-text">or find me on</p>
 
       <div class="social-icons">
         <a
@@ -386,13 +391,17 @@
           <i class="fab fa-whatsapp"></i>
         </a>
         <a
-          href="https://www.linkedin.com/in/pramudio-ananta-697990296"
+          href="https://www.linkedin.com/in/pramudio-ananta"
           target="_blank"
           aria-label="LinkedIn"
         >
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://github.com/" target="_blank" aria-label="GitHub">
+        <a
+          href="https://github.com/handispramudyo-hub"
+          target="_blank"
+          aria-label="GitHub"
+        >
           <i class="fab fa-github"></i>
         </a>
       </div>
@@ -407,7 +416,7 @@
     <footer>
       <div class="footer-content">
         <h3>Handis<span>.dev</span></h3>
-        <p>Membangun solusi digital, satu baris kode pada satu waktu.</p>
+        <p>Building digital solutions, one line of code at a time.</p>
         <div class="footer-socials">
           <a href="https://www.instagram.com/diidioo._/" target="_blank"
             ><i class="fab fa-instagram"></i
@@ -416,14 +425,14 @@
             ><i class="fab fa-whatsapp"></i
           ></a>
           <a
-            href="https://www.linkedin.com/in/pramudio-ananta-697990296"
+            href="https://www.linkedin.com/in/pramudio-ananta"
             target="_blank"
             ><i class="fab fa-linkedin-in"></i
           ></a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 Handis Pramudio Ananta.</p>
+        <p>&copy; 2025 Handis Pramudio Ananta.</p>
       </div>
     </footer>
 
