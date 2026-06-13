@@ -1,44 +1,21 @@
 # profile-website — Agent Guide
 
-## Stack
 Vanilla HTML5 / CSS3 / JavaScript (ES6) — **no build step, no package manager, no test framework.**
 
-## Dependencies (all CDN, loaded in `index.html`)
-- AOS 2.3.4 (scroll animations)
-- Font Awesome 6.5.0 (icons)
-- Google Fonts: Inter
+## Dependencies (CDN in `index.html`)
+- AOS 2.3.4, Font Awesome 6.5.0, Google Fonts: Inter
 
 ## Dev workflow
-- **Serve locally**: any static HTTP server (`npx serve .`, Live Server, Python `http.server`, etc.)
-- **No build/lint/typecheck/test commands** exist.
-- Just edit files and reload the browser.
-
-## Project structure
-```
-index.html     — main page (English; contact form toast-only, no backend)
-cv.html        — printable resume page (standalone, downloadable via "Download CV" button)
-style.css      — all styles (light theme, Apple-inspired, CSS custom properties)
-script.js      — AOS init, typing effect, scroll nav, hamburger, stats counter, toast
-profiledio.jpeg — hero profile photo
-```
+- Serve with any static HTTP server (`npx serve .`, Live Server, Python `http.server`).
+- No build/lint/typecheck/test commands — just edit and reload.
 
 ## Conventions
-- UI text is in **English** (keep consistent).
-- Contact form in `script.js:185` simply shows a toast — no backend submission.
-- "Download CV" button opens `cv.html` in a new tab — page auto-triggers Print dialog (user can "Save as PDF").
-- Scroll-triggered animations use `data-aos` attributes; skill bars and stat counters use `IntersectionObserver` in JS.
-- CSS uses `:root` custom properties for theming (`--primary: #6366f1`, `--bg: #ffffff`, `--text: #1d1d1f`, etc.).
-- Mobile nav uses a hamburger menu (slide-in from right).
-
-## Design Style
-- **Modern Minimalist** (inspiration: Apple × Linear × Vercel)
-- **Light theme** — white background, dark slate text
-- **Color palette:**
-  - Primary `#6366f1` (indigo) — accents, buttons, links
-  - Background `#ffffff`, text `#1d1d1f`, muted `#6e6e73`
-- **Typography:** Inter (heading SemiBold 600, body Regular 400)
-- **Animations:** AOS scroll reveals (fade-up, fade-right/left), CSS transitions on hover, no particles
+- Contact form (`script.js:158`) shows a toast — **no backend**.
+- "Download CV" opens `cv.html` in a new tab; page auto-triggers Print dialog (600ms delay) for Save-as-PDF.
+- Scroll animations: `data-aos` attributes; skill bars and stat counters use `IntersectionObserver`.
+- Mobile nav: hamburger slide-in from right (`< 768px`).
+- CSS theming via `:root` vars (`--primary: #6366f1`, `--bg: #ffffff`, `--text: #1d1d1f`).
+- Hero photo: `profiledio.jpeg` (not `.jpg`).
 
 ## Git
-- Remote: `https://github.com/handispramudyo-hub/profile-website.git`
-- Branch: `main`
+- Remote: `https://github.com/handispramudyo-hub/profile-website.git` — branch: `main`

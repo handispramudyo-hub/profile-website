@@ -1078,7 +1078,9 @@ footer {
   }
 
   .btn-cv {
-    display: none;
+    display: inline-flex;
+    padding: 6px 12px;
+    font-size: 0.75rem;
   }
 
   .section-title {
@@ -1235,7 +1237,18 @@ footer {
   }
 
   .hire-badge {
-    display: none;
+    bottom: 14px;
+    right: 12px;
+    padding: 4px 10px;
+  }
+
+  .hire-text {
+    font-size: 0.6rem;
+  }
+
+  .hire-dot {
+    width: 5px;
+    height: 5px;
   }
 
   .social-icons {
