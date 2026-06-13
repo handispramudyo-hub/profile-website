@@ -287,22 +287,6 @@ nav a.nav-link.active {
   border-color: var(--text-secondary);
 }
 
-.contact-line {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  margin-bottom: 16px;
-  letter-spacing: 0.01em;
-}
-
-.contact-line a {
-  color: var(--primary);
-  text-decoration: none;
-}
-
-.contact-line a:hover {
-  text-decoration: underline;
-}
-
 /* Hero Image */
 .hero-img::after {
   content: "";
@@ -1037,10 +1021,6 @@ footer {
     font-size: 0.65rem;
   }
 
-  .contact-line {
-    font-size: 0.78rem;
-  }
-
   nav {
     padding: 12px 20px;
   }
@@ -1193,12 +1173,15 @@ footer {
   }
 
   .hero button {
-    padding: 10px 20px;
+    padding: 12px 22px;
     font-size: 0.85rem;
+    width: 100%;
+    justify-content: center;
   }
 
-  .contact-line {
-    font-size: 0.72rem;
+  .cta {
+    flex-direction: column;
+    width: 100%;
   }
 
   .section-title {
@@ -1215,6 +1198,10 @@ footer {
 
   .card {
     padding: 20px 16px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
   }
 
   .timeline-content {
@@ -1256,8 +1243,37 @@ footer {
   }
 
   .social-icons a {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+
+  .btn-cv {
+    padding: 4px 10px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero .sub {
+    font-size: 0.82rem;
+  }
+
+  .hero button {
+    padding: 10px 16px;
+    font-size: 0.8rem;
+  }
+
+  nav h2 {
+    font-size: 1rem;
+  }
+
+  nav a.nav-link {
     font-size: 0.95rem;
+    padding: 12px 14px;
   }
 }
